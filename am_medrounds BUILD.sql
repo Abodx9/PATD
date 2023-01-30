@@ -124,39 +124,6 @@ CREATE TABLE IF NOT EXISTS caresFor (
         PRIMARY KEY(timeOfCare)
 );
 
---GRANTING FULL PERMISSIONS TO ABDUL AND MRS. KNAUT;
-
-GRANT ALL PRIVILEGES ON Ward TO am_medrounds_abdul;
-GRANT ALL PRIVILEGES ON Doctors TO am_medrounds_abdul;
-GRANT ALL PRIVILEGES ON Patient TO am_medrounds_abdul;
-GRANT ALL PRIVILEGES ON Nurses TO am_medrounds_abdul;
-GRANT ALL PRIVILEGES ON Medication TO am_medrounds_abdul;
-GRANT ALL PRIVILEGES ON Rooms TO am_medrounds_abdul;
-GRANT ALL PRIVILEGES ON liesInBed TO am_medrounds_abdul;
-GRANT ALL PRIVILEGES ON treats TO am_medrounds_abdul;
-GRANT ALL PRIVILEGES ON administersTo TO am_medrounds_abdul;
-GRANT ALL PRIVILEGES ON caresFor TO am_medrounds_abdul;
-
-GRANT SELECT ON Ward TO am_medrounds_knaut;
-GRANT SELECT ON Doctors TO am_medrounds_knaut;
-GRANT SELECT ON Patient TO am_medrounds_knaut;
-GRANT SELECT ON Nurses TO am_medrounds_knaut;
-GRANT SELECT ON Medication TO am_medrounds_knaut;
-GRANT SELECT ON Rooms TO am_medrounds_knaut;
-GRANT SELECT ON treats TO am_medrounds_knaut;
-GRANT SELECT ON administersTo TO am_medrounds_knaut;
-GRANT SELECT ON caresFor TO am_medrounds_knaut;
-
-GRANT SELECT ON Ward TO am_medrounds_class;
-GRANT SELECT ON Doctors TO am_medrounds_class;
-GRANT SELECT ON Patient TO am_medrounds_class;
-GRANT SELECT ON Nurses TO am_medrounds_class;
-GRANT SELECT ON Medication TO am_medrounds_class;
-GRANT SELECT ON Rooms TO am_medrounds_class;
-GRANT SELECT ON treats TO am_medrounds_class;
-GRANT SELECT ON administersTo TO am_medrounds_class;
-GRANT SELECT ON caresFor TO am_medrounds_class;
-
 /* GIVING LIMITED SETS OF PERMISSIONS HERE TO ALLOW IOT DEVICES
 RUN CERTAIN FUNCTIONS AND PROTECT THE DATA THROUGH INDIRECT ACCESS.
 IN REALITY IT WOULD NOT BE FEASIBLE FOR NURSES TO ENTER ALL THE CARE DATA

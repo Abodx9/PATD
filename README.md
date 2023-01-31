@@ -15,3 +15,19 @@ This query creates all the tables, sets some important parameters and defines ev
 ```
 This query inserts all the auto-generated data from SQLer (https://github.com/Abodx9/sqler) into the previously created tables.
 ```
+# Simple SQL Query
+```SQL
+  How to get the name and address of all patients whose name  starts with "J" and live in "570 Gateway Lane"?
+  
+  Select Patient.name, Patient.surname,Patient.address
+  from Patient
+  where Patient.name LIKE'J%'
+  AND Patient.address LIKE '%570 Gateway Lane%';
+
+  ...
+  
+  Some SQL queries?
+
+
+
+```

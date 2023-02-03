@@ -32,7 +32,8 @@ JOIN Doctors ON Doctors.employeeID = treats.doctor
 WHERE Doctors.name = 'Doctor Name';
 ```
   How to retrieve the number of patients in each ward?
-    ```SQL
+  
+  ```SQL
 SELECT Ward.wardNumber, COUNT(Patient.patID) AS patientCount
 FROM Ward 
 JOIN Rooms ON Ward.wardNumber = Rooms.wardNumber
